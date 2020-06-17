@@ -73,3 +73,38 @@ console.log(factorial(6));
 // Lambda 函数
 var foo = (x:number) => 10 + x
 console.log(foo(1000));
+
+// 函数重载
+
+// 参数类型不同：
+// function disp(string):void; 
+// function disp(number):void;
+
+// 参数数量不同：
+// function disp(n1:number):void; 
+// function disp(x:number,y:number):void;
+
+// 参数类型顺序不同：
+// function disp(n1:number,s1:string):void; 
+// function disp(s:string,n:number):void;
+
+// 函数重载
+function disp(s1:string):void; 
+function disp(n1:number,s1:string):void; 
+function disp(s:string,n:number):void;
+ 
+function disp(x:any,y?:any):void { 
+    console.log(x); 
+    console.log(y); 
+} 
+disp("abc") 
+disp(1,"xyz");
+disp('xx', 2)
+
+
+// number
+
+
+
+
+

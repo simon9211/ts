@@ -52,6 +52,7 @@ console.log(res(12, 2));
     var x = "Hello!!";
     console.log(x);
 })();
+// 递归函数
 function factorial(number) {
     if (number <= 0) {
         return 1;
@@ -62,3 +63,13 @@ function factorial(number) {
 }
 ;
 console.log(factorial(6));
+// Lambda 函数
+var foo = function (x) { return 10 + x; };
+console.log(foo(1000));
+function disp(x, y) {
+    console.log(x);
+    console.log(y);
+}
+disp("abc");
+disp(1, "xyz");
+disp('xx', 2);
